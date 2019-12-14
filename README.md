@@ -19,7 +19,7 @@ Note that it is not production ready yet. If you encounter any issues, feel free
 ### 1. Cloning the repository
 ```
 git clone https://github.com/nabeel3133/3D-texture-fitting.git
-cd 3d-texture-fitting
+cd 3D-texture-fitting
 ```
 ### 2. Downloading the model
 - [BFM09: Basel Face Model 2009](https://faces.dmi.unibas.ch/bfm/index.php?nav=1-1-0&id=details)
