@@ -15,13 +15,27 @@ Note that it is not production ready yet. If you encounter any issues, feel free
 ### 1. Cloning the repository
 ```
 git clone https://github.com/nabeel3133/3D-texture-fitting.git
+cd 3d-texture-fitting
 ```
 ### 2. Downloading the model
 - [BFM09: Basel Face Model 2009](https://faces.dmi.unibas.ch/bfm/index.php?nav=1-1-0&id=details)
-  - After you have acquired BFM, extract the BaselFaceModel.tgz and go to`PublicMM1` folder, copy `01_MorphableModel.mat` and paste it in `3D-texture-fitting` folder.
+  - After you have acquired BFM, extract the BaselFaceModel.tgz and go to`PublicMM1` folder, copy `01_MorphableModel.mat`, `BFM_exp_idx.mat` and paste it in `./3D-texture-fitting/configs` folder.
   
 ### 3. Running the code
-
+Run the `main.py` with obj output from ddfa as input
+```
+python main.py -o ./samples/test.obj
+```
+If you can see the following output log in terminal, you ran it successfully.
+```
+BFM Mapping for Texture Prediction Started...
+BFM Mapping for Texture Prediction Completed
+Predicting Ear and Neck Texture...
+Predicting Ear and Neck Texture Completed
+Dump to ./samples/output.obj
+Dump to ./samples/output.ply
+```
+Two output files (obj and ply) will be saved in `3D-texture-fitting/samples` folder with the name `output.obj` and `output.ply` which can be redered by Meshlab or Microsoft 3D Builder.
 
 ## Citation
 If this work is useful for your research or if you use this implementation in your academic projects, please cite the following papers:
@@ -34,5 +48,15 @@ If this work is useful for your research or if you use this implementation in yo
     eprint={1701.04851},
     archivePrefix={arXiv},
     primaryClass={cs.CV}
+}
+```
+## References
+- [Face Alignment in Full Pose: A 3D Total Solution](https://arxiv.org/abs/1804.01005) [(Github)](https://github.com/cleardusk/3DDFA)
+```bibtex
+  @misc{3ddfa_cleardusk,
+  author =       {Jianzhu Guo, Xiangyu Zhu and Zhen Lei},
+  title =        {3DDFA},
+  howpublished = {\url{https://github.com/cleardusk/3DDFA}},
+  year =         {2018}
 }
 ```
