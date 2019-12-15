@@ -7,10 +7,10 @@
 This repository provides a Python implementation of the CVPR 2017 Paper - Synthesizing Normalized Faces From Facial Identity Features (Additional Results B.3 Implementation Only). Only Fitting Texture part is implemented which is mentioned in Additional Results Section B.3 of the paper.
 Note that it is not production ready yet. If you encounter any issues, feel free to post.
 
-# Paper
+## Paper
 [Synthesizing Normalized Faces From Facial Identity Features](https://arxiv.org/pdf/1701.04851.pdf)
 
-# Dependencies
+## Dependencies
 * [Python 3.5](https://www.python.org/downloads/release/python-352/)
   - [Numpy](https://pypi.org/project/numpy/) -> ```pip install numpy```
   - [Scipy](https://pypi.org/project/scipy/) -> ```pip install scipy```
